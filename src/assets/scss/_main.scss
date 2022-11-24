@@ -1,0 +1,30 @@
+html {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+  background: var(--background-color);
+  overflow-y:scroll;
+}
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main-content {
+  padding: 32px 28px;
+  overflow-x: hidden;
+  flex: 1;
+
+  @media (max-width: 1300px) {
+    padding: 32px 0;
+  }
+
+  @media (max-width: 1170px) {
+    overflow-x: auto;
+  }
+}
+.container {
+  max-width: 1785px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
